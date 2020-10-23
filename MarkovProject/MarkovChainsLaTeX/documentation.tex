@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}%AMS Math Package Importing
 
-\title{Markov Chains Project Title}
+\title{Movie Preferences Markov Model}
 \author{Ishaan Sathaye }
 \date{October 21, 2020}
 
@@ -10,27 +10,43 @@
 \maketitle
 
 \section{Real-World Phenomenon}
-State how this project helps people in the real world and background on this topic
+Recommendations and preferences in technology services are very important to 
+companies and people, as it can help companies build profiles and help people find their favorites.
+Many services like Netflix, Youtube, and Amazon Prime Video depend on their recommendation systems to engage their customers.
+Personalizing a user's preferences on movies can help movie theaters and advertisements to be more focused. Using genres and movie ratings
+in a recommendation chain program can provide users with similar movies, based on what they have watched. Movies that are similar would 
+usually have similar genres and they would have different ratings. Using a combination of these aspects would allow program to 
+recommend based on what movies would the user over another movie. 
 
 \section{Derivation and Assumptions}
-This is the first section. In LaTeX, new lines are manual.It will wrap text automatically but not make new line breaks.\\ 
-This is a new line.
+\subsection{Derivation}
+The Markov model was derived by finding characteristics of movies that can be used to recommend the user more movies. The initial state would be 
+a weighted average combination of the ratings and genres of the user's moves that have been watched. The transition matrix would include the 
+quantitative data values of genres of movies, using their IDs from the data source. This matrix would have what genres exist from movie to movie, so 
+when executing the model, then the preference would be made using the user's genres to the movie data genres.
+
+\subsection{Assumptions}
+Assumptions need to be made in order to simplify the created recommendation system. Only what the user inputs or the initial states
+would be considered, so outside recommendations will not be considered. This makes the system less complex and easier to track the user's preferences. 
+Another assumption would be that there will be only two characteristics that the preferences will be based. The movie dataset will only include ratings and 
+genres to simplify. Also, the assumption will be made that well-known and popular movies will be considered as a recommendation, so this may exclude foreign movies.
+
 
 \section{Data and Parameters}
-This is the first section. In LaTeX, new lines are manual.It will wrap text automatically but not make new line breaks.\\ 
-This is a new line.
+Data of movies, ratings, and genres will be taken from GroupLens. Data will be put in a .csv file and changed to 
+only include needed parts. Parameters for the initial state of a combination of genre and rating for the user's movies.
 
-\section{Transition Matrix}
+% \section{Transition Matrix}
 
-$$
-T = 
-\begin{bmatrix}
-%Compact Sedan SUV
-0.091 & 0 & 0.176 \\ %Compact
-0 & 0.221 & 0.35 \\ %Sedan
-0 & 0 & 0.474    %SUV
-\end{bmatrix}
-$$
+% $$
+% T = 
+% \begin{bmatrix}
+% %Compact Sedan SUV
+% 0.091 & 0 & 0.176 \\ %Compact
+% 0 & 0.221 & 0.35 \\ %Sedan
+% 0 & 0 & 0.474    %SUV
+% \end{bmatrix}
+% $$
 
 
 \end{document}
