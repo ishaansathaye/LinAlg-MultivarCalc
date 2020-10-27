@@ -25,4 +25,4 @@ for n=1:N
     F(n,1) = df(x0+C(n)*dx, y0+slopes*dx);
 end
 
-y = y0+B+F+dx
+y = y0+B+F+dx;
