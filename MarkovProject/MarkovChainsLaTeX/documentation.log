@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  6 DEC 2020 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 DEC 2020 00:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -234,6 +234,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
@@ -263,7 +268,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  34i,7n,29p,320b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf (3 pages, 113892 bytes).
+Output written on /Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf (3 pages, 114648 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
