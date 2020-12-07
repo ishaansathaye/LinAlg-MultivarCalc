@@ -22,12 +22,11 @@ recommend based on what movies would the user over another movie.
 \subsection{Derivation}
 The Markov model was derived by finding characteristics of movies that can be used to recommend the user more movies. The initial state would be 
 a weighted average combination of the ratings and genres of the user's moves that have been watched. The transition matrix would include the 
-quantitative data values of genres of movies, using their IDs from the data source. This matrix would have what genres exist from movie to movie, so 
-when executing the model, then the preference would be made using the user's genres to the movie data genres.
+quantitative data values of genres of movies, using their IDs from the data source. 
 
 \subsection{Assumptions}
-Assumptions need to be made in order to simplify the created recommendation system. Only what the user inputs or the initial states
-would be considered, so outside recommendations will not be considered. This makes the system less complex and easier to track the user's preferences. 
+Assumptions need to be made in order to simplify the created recommendation system. Outside recommendations will not be considered, therefore the program will only take in 
+the current user's preferences. This makes the system less complex and easier to track the sole user's preferences. 
 Another assumption would be that there will be only two characteristics that the preferences will be based. The movie dataset will only include ratings and 
 genres to simplify. Also, the assumption will be made that well-known and popular movies will be considered as a recommendation, so this may exclude foreign movies.
 
