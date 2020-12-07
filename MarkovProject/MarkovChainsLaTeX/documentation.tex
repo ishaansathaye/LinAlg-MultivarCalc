@@ -1,10 +1,11 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}%AMS Math Package Importing
+\usepackage{hyperref}
 
 \title{Movie Preferences Markov Model}
 \author{Ishaan Sathaye }
-\date{October 21, 2020}
+\date{December 10, 2020}
 
 \begin{document}
 \maketitle
@@ -34,9 +35,9 @@ $$
 S_0 =
 \begin{bmatrix}
 Toy Story:3.5 \\
-Jumanji:2 \\
+Jumanji:2.0 \\
 Akira:4.5 \\
-Rampage:3.05 \\
+Rampage:3.1 \\
 Avergers Infinity War: 4.2
 \end{bmatrix}
 $$
@@ -59,24 +60,87 @@ $$
 Assumptions need to be made in order to simplify the created recommendation system. Outside recommendations will not be considered, therefore the program will only take in 
 the current user's preferences. This makes the system less complex and easier to track the sole user's preferences. 
 Another assumption would be that there will be only two characteristics that the preferences will be based. The movie dataset will only include ratings and 
-genres to simplify. Also, the assumption will be made that well-known and popular movies will be considered as a recommendation, so this may exclude foreign movies.
+genres. Also, the assumption will be made that well-known and popular movies will be considered as a recommendation, so this may exclude foreign movies.
 
 
 \section{Data and Parameters}
-Data of movies, ratings, and genres will be taken from GroupLens. Using \verb|!wget -O|, the program will download and unzip the dataset from an IBM API that contains the GroupLens
-movie data. Data will be put in a .csv file and changed to only include needed parts. Parameters for the initial state of a combination of genre and rating for the user's movies.
+Data of movies, ratings, and genres will be taken from GroupLens  \href{http://grouplens.org/datasets/movielens/}{(link)} and IBM.  Using \verb|!wget -O|, the program will 
+download and unzip the dataset from an IBM API that contains the GroupLens movie data. All types of data will be 
+first put into a CSV file, then into a data frame, and preprocessed.
 
-% \section{Transition Matrix}
+GroupLens Link: http://grouplens.org/datasets/movielens/\\
+ 
+The movie dataset will be then put into a data frame and preprocessed to include the movieID, title, and the genres only. The table below shows the 
+first five rows of the move and genre data frame:
+\begin{center}
+\begin{tabular}{||c c c c||}
+    \hline
+    - & movieID & title & genres \\ [0.5ex] 
+    \hline\hline
+    0 & 1 & Toy Story (1995) & Adventure,Animation,Children,Comedy,Fantasy \\ 
+    \hline
+    1 & 2 & Jumanji (1995) & Adventure,Children,Fantasy \\
+    \hline
+    2 & 3 & Grumpier Old Men (1995) & Comedy|Romance \\
+    \hline
+    3 & 4 & Waiting to Exhale (1995) & Comedy|Drama|Romance \\
+    \hline
+    4 & 5 & Father of the Bride Part II (1995) & Comedy \\
+    \hline
+    ... & ... & ... & ... \\ [1ex]
+    \hline
+\end{tabular}
+\end{center}
 
-% $$
-% T = 
-% \begin{bmatrix}
-% %Compact Sedan SUV
-% 0.091 & 0 & 0.176 \\ %Compact
-% 0 & 0.221 & 0.35 \\ %Sedan
-% 0 & 0 & 0.474    %SUV
-% \end{bmatrix}
-% $$
+The same thing will apply to the ratings dataset, which will be first be in a CSV file then put into a data frame to be preprocessed. The table below shows the first 
+five rows the ratings dataset that are organized by the movieID, which correspond to the movie and genre data frame:
+\begin{center}
+\begin{tabular}{||c c c c||}
+        \hline
+    - & userID & movieID & rating \\ [0.5ex] 
+    \hline\hline
+    0 & 1 & 169 & 2.5 \\ 
+    \hline
+    1 & 1 & 2471 (1995) & 3.0 \\
+    \hline
+    2 & 1 & 48516 & 5.0 \\
+    \hline
+    3 & 2 & 2571 & 3.5 \\
+    \hline
+    4 & 2 & 109487 & 4.0 \\
+    \hline
+    ... & ... & ... & ... \\ [1ex] 
+    \hline
+\end{tabular}
+\end{center}
+
+Parameters for the initial state matrix will include the user's watched or liked movies that will be inputted. The Pandas data frame of the input
+will look simple with only the title of the movies that the user likes and the ratings of those movies:
+\begin{center}
+\begin{tabular}{||c c c||}
+    \hline
+    - & title & rating \\ [0.5ex] 
+    \hline\hline
+    0 & Breakfast Club, The & 5.0 \\ 
+    \hline
+    1 & Toy Story & 3.5 \\
+    \hline
+    2 & Jumanji & 2.0 \\
+    \hline
+    3 & Pulp Fiction & 5.0 \\
+    \hline
+    4 & Akira & 4.5 \\ [1ex] 
+    \hline
+\end{tabular}
+\end{center}
+
+\section{Benchmarking}
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Matlab Code}
 
 
 \end{document}
