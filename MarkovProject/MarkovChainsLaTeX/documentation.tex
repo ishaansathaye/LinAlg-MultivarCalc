@@ -14,15 +14,46 @@ Recommendations and preferences in technology services are very important to
 companies and people, as it can help companies build profiles and help people find their favorites.
 Many services like Netflix, Youtube, and Amazon Prime Video depend on their recommendation systems to engage their customers.
 Personalizing a user's preferences on movies can help movie theaters and advertisements to be more focused. Using genres and movie ratings
-in a recommendation chain program can provide users with similar movies, based on what they have watched. Movies that are similar would 
-usually have similar genres and they would have different ratings. Using a combination of these aspects would allow program to 
-recommend based on what movies would the user over another movie. 
+in a recommendation chain program can provide users with similar movies, based on what they have watched or liked. Movies that users 
+tend to enjoy, usually have a genre in common and they all come with a rating. Using a combination of these aspects would allow a program to 
+recommend users to watch certain movies over others. 
 
 \section{Derivation and Assumptions}
 \subsection{Derivation}
-The Markov model was derived by finding characteristics of movies that can be used to recommend the user more movies. The initial state would be 
-a weighted average combination of the ratings and genres of the user's moves that have been watched. The transition matrix would include the 
-quantitative data values of genres of movies, using their IDs from the data source. 
+The Markov model was derived by finding characteristics of movies that can be used to recommend the user more movies.\\
+
+\textbf{Genres(19):} Adventure, Animation, Children, Comedy, Fantasy, Romance, Drama, Action, Crime, Thriller, Horror, Mystery, SciFi, IMAX, Documentary,
+War, Musical, Western, and Film-Noir
+
+\textbf{Ratings:} On a scale from 1.0 to 5.0\\
+
+The initial state matrix would entail the movie name and the rating of the user. This data would be organized with the name following 
+the rating in the program. This matrix below could be a sample
+of what the user has watched or liked.
+$$
+S_0 =
+\begin{bmatrix}
+Toy Story:3.5 \\
+Jumanji:2 \\
+Akira:4.5 \\
+Rampage:3.05 \\
+Avergers Infinity War: 4.2
+\end{bmatrix}
+$$
+    The program would then search the dataset for these movies and find all their genres. The transition matrix would include the 
+quantitative data values consisting of a weighted average between genres and ratings for all the movies in the dataset. This data will be 
+organized in a tabular format, and then converted to a list to find the preferences. Each position shows the probability of watching one 
+movie over another, as shown in the matrix below. The matrix is calculated and continued for all movies in the dataset.
+$$
+T =
+\begin{bmatrix}
+1 & 0.1 & 0 & 0 & ...\\
+0 & 0.1 & 0 & 0.1 & ...\\
+0 & 0.5 & 0.3 & 0 & ...\\
+0 & 0.3 & 0.7 & 0 & ...\\
+... & ... & ... & ... & ...\\
+\end{bmatrix}
+$$ 
 
 \subsection{Assumptions}
 Assumptions need to be made in order to simplify the created recommendation system. Outside recommendations will not be considered, therefore the program will only take in 
@@ -32,8 +63,8 @@ genres to simplify. Also, the assumption will be made that well-known and popula
 
 
 \section{Data and Parameters}
-Data of movies, ratings, and genres will be taken from GroupLens. Data will be put in a .csv file and changed to 
-only include needed parts. Parameters for the initial state of a combination of genre and rating for the user's movies.
+Data of movies, ratings, and genres will be taken from GroupLens. Using \verb|!wget -O|, the program will download and unzip the dataset from an IBM API that contains the GroupLens
+movie data. Data will be put in a .csv file and changed to only include needed parts. Parameters for the initial state of a combination of genre and rating for the user's movies.
 
 % \section{Transition Matrix}
 
