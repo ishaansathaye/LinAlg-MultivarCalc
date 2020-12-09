@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1607328008 "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf" "documentation" 1607328012
-  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.aux" 1607328011 1682 2624eb18f30a015ca1bc8f403bc71c8b ""
-  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" 1607328008 5749 abbf8e0fd24dfbd263ceb68878bb36d5 ""
+["pdflatex"] 1607494933 "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf" "documentation" 1607494936
+  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.aux" 1607494935 1675 8cfe3931d2675c7bc8ab759f65053566 ""
+  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" 1607494932 6269 eaefe0eaafa7b457e2fb109f06abdd4f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -68,13 +68,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "documentation.aux" 1607328011 1682 2624eb18f30a015ca1bc8f403bc71c8b "pdflatex"
-  "documentation.out" 1607328011 470 9d0e18049734d693fe1176c53a5411ad "pdflatex"
-  "documentation.tex" 1607328008 5749 abbf8e0fd24dfbd263ceb68878bb36d5 ""
+  "documentation.aux" 1607494935 1675 8cfe3931d2675c7bc8ab759f65053566 "pdflatex"
+  "documentation.out" 1607494935 463 a6c22373bd212bad03125fc333aa2521 "pdflatex"
+  "documentation.tex" 1607494932 6269 eaefe0eaafa7b457e2fb109f06abdd4f ""
   (generated)
-  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf"
-  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.log"
   "documentation.pdf"
   "documentation.out"
+  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.log"
+  "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf"
   "documentation.aux"
   "documentation.log"
