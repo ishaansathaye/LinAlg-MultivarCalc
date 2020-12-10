@@ -186,9 +186,9 @@ Below is a recommendation table (showing only top 5) that is generated:
         \hline
         6350 & Laputa: Castle in the Sky (Tenkû no shiro Rapy... & [Action, Adventure, Animation, Children, Fanta... & 1986 \\ 
         \hline
-        6365 & Matrix Reloaded, The & [Action, Adventure, Sci-Fi, Thriller, IMAX] & 2003 \\ [1ex] 
+        6365 & Matrix Reloaded, The & [Action, Adventure, Sci-Fi, Thriller, IMAX] & 2003 \\  
         \hline
-        ...(45) & ...(45) & ...(45) & ...(45) \\
+        ...(45) & ...(45) & ...(45) & ...(45) \\ [1ex]
         \hline
     \end{tabular}
     \end{adjustwidth}
@@ -196,8 +196,67 @@ Below is a recommendation table (showing only top 5) that is generated:
 
 \section{Discussion}
 The model was able to recommend movies in the end using the initial state matrix of the user's movies and ratings. The program made a profile for the user
-based on the ratings given and then the genres of the movies from the input and the entire Movie Dataset. These values of the profile were then used to generate
-the transition matrix which contains the likelihood of watching one movie over another. Then the matrix is applied to the original dataset where the movies that have
+based on the ratings given and the genres of the movies from the input and the entire Movie Dataset: \\
+\begin{center}
+    \begin{tabular}{||c c||}
+        \hline
+        Adventure & 8.8 \\ [0.5ex] 
+        \hline
+        Animation & 3.5 \\ 
+        \hline
+        Children & 5.5 \\ 
+        \hline
+        Comedy & 3.5 \\ 
+        \hline
+        Fantasy & 8.8 \\ 
+        \hline
+        Romance & 0.0 \\ 
+        \hline
+        Drama & 0.0 \\ 
+        \hline
+        Action & 6.8 \\ 
+        \hline
+        Crime & 0.0 \\ 
+        \hline
+        Thriller & 3.5 \\ 
+        \hline
+        Horror & 0.0 \\ 
+        \hline
+        Mystery & 0.0 \\ 
+        \hline
+        Sci-Fi & 7.8 \\ 
+        \hline
+        IMAX & 11.1 \\ 
+        \hline
+        Documentary & 0.0 \\ 
+        \hline
+        ...(5) & ...(5) \\ [1ex]
+        \hline
+    \end{tabular}
+    \end{center}
+
+These values of the profile were then used to generate the transition matrix which contains the likelihood of watching each movie in the dataset: \\
+\begin{center}
+    \begin{tabular}{||c c||}
+        \hline
+        movieId & - \\ [0.5ex] 
+        \hline
+        32031 & 0.826307 \\ 
+        \hline
+        85261 & 0.792580 \\ 
+        \hline
+        103042 & 0.730185 \\ 
+        \hline
+        54278 & 0.694772 \\ 
+        \hline
+        47124 & 0.694772 \\ 
+        \hline
+        ... & ... \\ [1ex]
+        \hline
+    \end{tabular}
+    \end{center}
+
+Then the matrix is applied to the original dataset where the movies that have
 the best weighted values are sorted to the top, resulting in the recommendation table. To test this model, 6 movies were picked by random people to see if the 6th movie not
 inputted would make it to the recommendation table. 1 person was told to pick 6 movies that he or she liked to watch and were very similar to each other. The other
 person was told to pick any 6 movies that he or she loved. The results reveal that with more similar movies, the program outputted a similar movie at the top, while
