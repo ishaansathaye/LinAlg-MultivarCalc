@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1607577624 "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf" "documentation" 1607577627
+["pdflatex"] 1607577624 "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf" "documentation" 1607577647
   "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.aux" 1607577627 1675 d3ec2495dce7bc4153583c7ca4b1a870 ""
   "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.tex" 1607577623 11370 2b8cccd0500c33a3f341dd0996b455d1 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -64,10 +64,10 @@
   "documentation.tex" 1607577623 11370 2b8cccd0500c33a3f341dd0996b455d1 ""
   "documentation.toc" 1607577627 644 52cb9a230472f7e9b4a7a24f68f892fe "pdflatex"
   (generated)
-  "documentation.pdf"
-  "documentation.aux"
   "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.log"
   "/Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.pdf"
-  "documentation.toc"
-  "documentation.out"
   "documentation.log"
+  "documentation.out"
+  "documentation.pdf"
+  "documentation.aux"
+  "documentation.toc"
