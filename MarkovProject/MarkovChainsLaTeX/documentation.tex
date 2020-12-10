@@ -4,13 +4,28 @@
 \usepackage{hyperref}
 \usepackage{changepage}
 
-\title{Movie Preferences Markov Model}
-\author{Ishaan Sathaye }
-\date{December 10, 2020}
-
 \begin{document}
-\maketitle
 
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+
+    \vspace*{0.5cm}
+
+    \huge\bfseries
+    Movie Recommender Markov Chain Project
+
+    \vspace*{0.5cm}
+
+    \large Ishaan Sathaye \\
+    \large December 10, 2020
+
+    \vspace*{\fill}
+\end{titlepage}
+\newpage
+\tableofcontents
+
+\newpage
 \section{Real-World Phenomenon}
 Recommendations and preferences in technology services are very important to 
 companies and people, as it can help companies build profiles and help people find their favorites.
@@ -147,7 +162,13 @@ program did excellent as it recommended the movie in 2nd place out of 50 movies.
 any 6 movies that he or she likes this time. The sixth movie that was left out was Journey to the Center of the Earth and the other movies
 had adventurous genres common with this. When the program was run, the recommendation did not show the sixth movie at the top, rather it was 48th with
 \emph{Super Mario Bros} and \emph{Space Jam}. Although this method did not show the consistency of the program, it made recommendations that users have not watched
-and showed what genres led to the recommendation.\\
+and showed what genres led to the recommendation.
+
+\section{Results}
+
+The recommendation program operated successfully by creating recommendations for a user, based on the movies 
+given, a movie dataset, and their ratings/genres. By inputting movies that a user watched, the program outputted
+a list of 50 movies that the program recommends the user watches.\\
 Below is a recommendation table (showing only top 5) that is generated: 
 \begin{center}
     \begin{adjustwidth}{-3.5cm}{}
@@ -173,13 +194,16 @@ Below is a recommendation table (showing only top 5) that is generated:
     \end{adjustwidth}
     \end{center}
 
-\section{Results}
-
-The recommendation program operated successfully by creating recommendations for a user, based on the movies 
-given, a movie dataset, and their ratings/genres. By inputting movies that a user watched, the program outputted
-a list of 50 movies that the program recommends the user watches. 
-
 \section{Discussion}
+The model was able to recommend movies in the end using the initial state matrix of the user's movies and ratings. The program made a profile for the user
+based on the ratings given and then the genres of the movies from the input and the entire Movie Dataset. These values of the profile were then used to generate
+the transition matrix which contains the likelihood of watching one movie over another. Then the matrix is applied to the original dataset where the movies that have
+the best weighted values are sorted to the top, resulting in the recommendation table. To test this model, 6 movies were picked by random people to see if the 6th movie not
+inputted would make it to the recommendation table. 1 person was told to pick 6 movies that he or she liked to watch and were very similar to each other. The other
+person was told to pick any 6 movies that he or she loved. The results reveal that with more similar movies, the program outputted a similar movie at the top, while
+with random and not closely related movies the 6th movies was far down the table. To improve this model, we can use more factors like actors, year, language, and topic that can 
+make the recommendations more precise and personalized. Therefore improving the amount of variables and factors, in addition to expanding the movie dataset can further refine the
+recommendation model.
 
 \section{Code}
 
