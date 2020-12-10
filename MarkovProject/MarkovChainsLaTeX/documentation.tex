@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}%AMS Math Package Importing
 \usepackage{hyperref}
+\usepackage{changepage}
 
 \title{Movie Preferences Markov Model}
 \author{Ishaan Sathaye }
@@ -73,6 +74,7 @@ first put into a CSV file, then into a data frame, and preprocessed.\\
 The movie dataset will be then put into a data frame and preprocessed to include the movieID, title, and the genres only. The table below shows the 
 first five rows of the move and genre data frame:
 \begin{center}
+\begin{adjustwidth}{-1.75cm}{}
 \begin{tabular}{||c c c c||}
     \hline
     - & movieID & title & genres \\ [0.5ex] 
@@ -90,6 +92,7 @@ first five rows of the move and genre data frame:
     ... & ... & ... & ... \\ [1ex]
     \hline
 \end{tabular}
+\end{adjustwidth}
 \end{center}
 
 The same thing will apply to the ratings dataset, which will be first be in a CSV file then put into a data frame to be preprocessed. The table below shows the first 
@@ -135,6 +138,40 @@ will look simple with only the title of the movies that the user likes and the r
 \end{center}
 
 \section{Benchmarking}
+By inputting people's movies, the program was tested on how well it recommended movies that were similar to the input. 
+The first way that the program was benchmarked was by having a person pick 6 movies that they like and are very similar to each other.
+One person was told to pick 6 movies that were very similar to each other so he or she picked 6 Jackie Chan movies,
+and 5 of them were inputted into the program acting as the initial state matrix. Then the 
+recommendation was run and checked to see if the 6th movie, which in this case was \emph{Rumble in the Bronx}, appeared. In fact, the 
+program did excellent as it recommended the movie in 2nd place out of 50 movies. This method was repeated: another person was asked to input 
+any 6 movies that he or she likes this time. The sixth movie that was left out was Journey to the Center of the Earth and the other movies
+had adventurous genres common with this. When the program was run, the recommendation did not show the sixth movie at the top, rather it was 48th with
+\emph{Super Mario Bros} and \emph{Space Jam}. Although this method did not show the consistency of the program, it made recommendations that users have not watched
+and showed what genres led to the recommendation.\\
+Below is a recommendation table (showing only top 5) that is generated: 
+\begin{center}
+    \begin{adjustwidth}{-3.5cm}{}
+    \begin{tabular}{||c c c c||}
+        \hline
+        movieId & title & genres & year \\ [0.5ex] 
+        \hline\hline
+        546 & Super Mario Bros. & [Action, Adventure, Children, Comedy, Fantasy,... & 1993 \\ 
+        \hline
+        673 & Space Jam & [Adventure, Animation, Children, Comedy, Fanta... & 1996 \\ 
+        \hline
+        4781 & Megiddo: The Omega Code 2 & [Action, Adventure, Fantasy, Sci-Fi, Thriller] & 2001 \\ 
+        \hline
+        5882 & Treasure Planet & [Adventure, Animation, Children, Sci-Fi, IMAX] & 2002 \\ 
+        \hline
+        6350 & Laputa: Castle in the Sky (Tenkû no shiro Rapy... & [Action, Adventure, Animation, Children, Fanta... & 1986 \\ 
+        \hline
+        6365 & Matrix Reloaded, The & [Action, Adventure, Sci-Fi, Thriller, IMAX] & 2003 \\ [1ex] 
+        \hline
+        ...(45) & ...(45) & ...(45) & ...(45) \\
+        \hline
+    \end{tabular}
+    \end{adjustwidth}
+    \end{center}
 
 \section{Results}
 
