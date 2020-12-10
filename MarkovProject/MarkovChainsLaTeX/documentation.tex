@@ -3,6 +3,8 @@
 \usepackage{amsmath}%AMS Math Package Importing
 \usepackage{hyperref}
 \usepackage{changepage}
+\usepackage[thinlines]{easytable}
+\usepackage{array}
 
 \begin{document}
 
@@ -89,25 +91,23 @@ first put into a CSV file, then into a data frame, and preprocessed.\\
 The movie dataset will be then put into a data frame and preprocessed to include the movieID, title, and the genres only. The table below shows the 
 first five rows of the move and genre data frame:
 \begin{center}
-\begin{adjustwidth}{-1.75cm}{}
-\begin{tabular}{||c c c c||}
+\begin{tabular}{| m{1cm} | m{1.5cm}| m{3cm} | m{5em} |}
     \hline
     - & movieID & title & genres \\ [0.5ex] 
     \hline\hline
-    0 & 1 & Toy Story (1995) & Adventure,Animation,Children,Comedy,Fantasy \\ 
+    0 & 1 & Toy Story (1995) & Adventure, Animation, Children, Comedy, Fantasy \\ 
     \hline
-    1 & 2 & Jumanji (1995) & Adventure,Children,Fantasy \\
+    1 & 2 & Jumanji (1995) & Adventure, Children, Fantasy \\
     \hline
-    2 & 3 & Grumpier Old Men (1995) & Comedy|Romance \\
+    2 & 3 & Grumpier Old Men (1995) & Comedy, Romance \\
     \hline
-    3 & 4 & Waiting to Exhale (1995) & Comedy|Drama|Romance \\
+    3 & 4 & Waiting to Exhale (1995) & Comedy, Drama, Romance \\
     \hline
     4 & 5 & Father of the Bride Part II (1995) & Comedy \\
     \hline
     ... & ... & ... & ... \\ [1ex]
     \hline
 \end{tabular}
-\end{adjustwidth}
 \end{center}
 
 The same thing will apply to the ratings dataset, which will be first be in a CSV file then put into a data frame to be preprocessed. The table below shows the first 
@@ -171,8 +171,7 @@ given, a movie dataset, and their ratings/genres. By inputting movies that a use
 a list of 50 movies that the program recommends the user watches.\\
 Below is a recommendation table (showing only top 5) that is generated: 
 \begin{center}
-    \begin{adjustwidth}{-3.5cm}{}
-    \begin{tabular}{||c c c c||}
+    \begin{tabular}{| m{1cm} | m{2cm}| m{5cm} | m{5em} |}
         \hline
         movieId & title & genres & year \\ [0.5ex] 
         \hline\hline
@@ -191,7 +190,6 @@ Below is a recommendation table (showing only top 5) that is generated:
         ...(45) & ...(45) & ...(45) & ...(45) \\ [1ex]
         \hline
     \end{tabular}
-    \end{adjustwidth}
     \end{center}
 
 \section{Discussion}

@@ -70,6 +70,12 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/changepage/changepage.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/easy/easytable.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/easy/easytable.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/easy/easy.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/easy/easy.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /Users/ishaansathaye/Documents/GitHub/LinAlg-MultivarCalc/MarkovProject/MarkovChainsLaTeX/documentation.aux
